@@ -16,12 +16,13 @@
     min-height: 100vh;
     display: flex;
     gap: 30px;
+    
  
   }
 
  
 
-  @media(min-width:600px){
+  @media(max-width:600px){
     aside{
      max-width: 208px;
    }
@@ -37,6 +38,7 @@
     --text-color: #837E9F;
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
+    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);;
   }
  
  
@@ -48,14 +50,14 @@
    margin-bottom: 30px;
   }
 
- /*ASIDE container photo*/
+ /*ASIDE CONTAINER PHOTO*/
   #containerPhoto{
     border: 2px solid red;
     text-align: center;
     border-radius: 20px;
     color: var(--text-color);/*text color*/
     background-color:var(--bg-cards) ;
-
+    box-shadow: var(--box-shadow);
   }
 
   .photoProfile{
@@ -73,7 +75,7 @@
   }
 
 
-/*ASIDE container infos*/
+/*ASIDE CONTAINER INFOS*/
 
  #containerInfos{
   border-radius: 20px;
@@ -82,7 +84,7 @@
   background-color: var(--bg-cards);
   font-size: 13px;
   font-weight: 400;
-  
+  box-shadow: var(--box-shadow);
  }
 
  #containerInfos ul {/*box da lista no geral*/
@@ -104,13 +106,14 @@
 
 
 
- /*TECNOLOGIAS container*/
+ /*ASIDE CONTAINER TECNOLOGIAS */
  #containerTecnologias{
   border: 2px solid purple;
   border-radius: 20px ;
   color: black;
   background-color: var(--bg-cards);
-  flex-wrap: wrap;
+  box-shadow: var(--box-shadow);
+  
  }
 
  #containerTecnologias h2{
@@ -121,16 +124,16 @@
  }
 
 
-#containerTecnologias div{
+  #containerTecnologias div{
  
-display: flex;
-flex-direction: column;
-gap:15px;
-
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  margin: 10px 20px 30px;
 
 }
 
-#containerTecnologias div section{
+  #containerTecnologias div section{
   display: flex;
   gap: 10px;
   align-items: center;
@@ -152,12 +155,44 @@ gap:15px;
   justify-content: center;
   height: 24px;
 }
+
+
+
+
+  
+  /*ASIDE CONTAINER EDUCAÇÃO*/
+  #containerEducação{
+    border: 2px solid peru;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+   }
+  
+   #containerEducação h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 20px 20px;
+    color: var(--text-color);
+    
+   }
+  
+   #containerEducação ul li{
+    margin: 10px 65px 30px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--text-color);
+
+   }
   
   
-  
-  
-  
-  
+   #containerEducação ul li p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+   }
   
   
   
