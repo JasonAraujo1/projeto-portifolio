@@ -1,0 +1,42 @@
+*{
+    font-family: 'Exo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+  body{
+    
+  }
+  .page{
+    border: 2px solid;
+    min-height: 100vh;
+    display: flex;
+    gap: 1rem;
+
+  }
+  
+  aside{
+    background:lightgreen;
+    flex: 1;/*significa "cresce por igual, pegando 1 fração"  ocupando 1/3 do espaço*/
+  }
+  
+  main{
+    background:lightblue;
+    flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
+    
+    display: flex;
+    flex-direction: column;/*para ficar os elementos um abaixo do outro*/
+  }
+  
+  main section:nth-child(1){
+    background: white;
+    flex:2 0;
+  }
+  
+  main section:nth-child(2){
+    background:orange;
+    flex:0 100px;/*'0' para não crescer por igual, e vai ter uma altura fixa de '100px', ou seja NÃO É FLEXÍVEL(não é flex), não vai se adaptar*/
+  }
+  
+  main section:nth-child(3){
+    background:pink;
+    flex:1 0;
+  }
