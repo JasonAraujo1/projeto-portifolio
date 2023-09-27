@@ -1,22 +1,186 @@
 *{
+  margin: 0;
+  padding: 0; /*preenchimento interno*/
+  box-sizing: border-box;
+   
+  }
+
+  body{
+    height: 100vh;
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
-  }
-  body{
-    
+    color: var(--body-bg-color);
   }
   .page{
-    border: 2px solid;
+    border: 25px solid;
     min-height: 100vh;
     display: flex;
-    gap: 1rem;
-
+    gap: 30px;
+ 
   }
-  
+
+ 
+
+@media(min-width:600px){
+  aside{
+    max-width: 208px;
+  }
+}
+
+@media(min-width:1024px){
+  aside{
+    max-width: 348px;
+  }
+}
+  :root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+ 
+ 
   aside{
     background:lightgreen;
     flex: 1;/*significa "cresce por igual, pegando 1 fração"  ocupando 1/3 do espaço*/
   }
+  aside div{ 
+   margin-bottom: 30px;
+  }
+
+ /*ASIDE container photo*/
+  #containerPhoto{
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 8%;
+    color: var(--text-color);/*text color*/
+    background-color:var(--bg-cards) ;
+
+  }
+
+  .photoProfile{
+    border: 2px solid rgba(0, 255, 0, 1);
+    border-radius: 50%;
+    display: block;
+    width: 132px;
+    margin: 32px auto 30px;
+  }
+  
+  #containerPhoto p{
+    margin: 0 auto 49px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+
+/*ASIDE container infos*/
+
+ #containerInfos{
+  border-radius: 8%;
+  border: 2px solid blue;
+  color: var(--text-color);
+  background-color: var(--bg-cards);
+  font-size: 13px;
+  font-weight: 400;
+  
+ }
+
+ #containerInfos ul {/*box da lista no geral*/
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  margin: 30px  40px;
+ }
+
+ #containerInfos ul li{/*itens da lista. Aqui alinhou img com text, na horizontal*/
+  display: flex;
+  align-items: center;
+  
+ }
+
+ #containerInfos ul li img{
+  margin-right:20px ;
+ }
+
+
+
+ /*TECNOLOGIAS container*/
+ #containerTecnologias{
+  border: 2px solid purple;
+  border-radius: 8%;
+  color: black;
+  background-color: var(--bg-cards);
+  flex-wrap: wrap;
+ }
+
+ #containerTecnologias h2{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 20px 20px;
+  color: var(--text-color);
+ }
+
+
+#containerTecnologias div{
+ 
+display: flex;
+flex-direction: column;
+gap:15px;
+
+
+}
+
+#containerTecnologias div section{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  
+  
+}
+
+#containerTecnologias div section box{
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  border: 2px solid #CB92B1;
+  background-color: #CB92B1;
+  border-radius: 30px;
+  width: 86px;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+
+
+
+
+
+  
+
   
   main{
     background:lightblue;
