@@ -196,6 +196,32 @@
     gap: 30px;
   }
 
+  main{
+    background: var(--body-bg-color);
+    flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
+    
+    display: flex;
+    flex-direction: column;/*para ficar os elementos um abaixo do outro*/
+    
+  }
+  
+  main section:nth-child(1){
+    background: white;
+    flex:2 0;
+    
+  }
+  
+  main section:nth-child(2){
+    background:orange;
+    flex:0 100px;/*'0' para não crescer por igual, e vai ter uma altura fixa de '100px', ou seja NÃO É FLEXÍVEL(não é flex), não vai se adaptar*/
+  }
+  
+  main section:nth-child(3){
+    background:pink;
+    flex:1 0;
+  }
+
+
   #myProjects{
     border: 2px solid blue;
 
@@ -224,32 +250,62 @@
     font-weight: 400;
   }
 
+  /*MAIN BOX PROJECTS*/
  
-  
-  main{
-    background: var(--body-bg-color);
-    flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
-    
+  #boxesProjects{
     display: flex;
-    flex-direction: column;/*para ficar os elementos um abaixo do outro*/
+    border: 2px solid rgb(255, 0, 200);
+    flex: 0 1 186px ;
+  }
+
+  #boxesProjects div{
+    display: flex;
+    border: 2px solid rgb(0, 255, 0);
+    flex: 0 1 50%;
+
+    border-radius: 20px;
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+
+    flex-direction: column;
     
-  }
+    box-shadow: var(--box-shadow);
+
+    }
+
+    #boxesProjects  div h3 img{
+      display: flex;
+      margin: 22px 16px 20px 30px;
+      align-items: center;
+      
+    }
+
+
+    #boxesProjects div h3{
+      position: relative;
+      display: flex;
+      border: 2px solid red;
+      align-items: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0 30px 0 0  ;
+      text-wrap: nowrap;
+      
+
+    }
+
+    #boxesProjects div p{
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0 30px;
+
+    }
   
-  main section:nth-child(1){
-    background: white;
-    flex:2 0;
-    
-  }
-  
-  main section:nth-child(2){
-    background:orange;
-    flex:0 100px;/*'0' para não crescer por igual, e vai ter uma altura fixa de '100px', ou seja NÃO É FLEXÍVEL(não é flex), não vai se adaptar*/
-  }
-  
-  main section:nth-child(3){
-    background:pink;
-    flex:1 0;
-  }
+
+
+  /*MAIN RECENT REPOSITORIES*/
 
 
 
