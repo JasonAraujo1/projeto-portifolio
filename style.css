@@ -22,17 +22,7 @@
 
  
 
-  @media(max-width:600px){
-    aside{
-     max-width: 208px;
-   }
-  }
-
-  @media(min-width:1024px){
-   aside{
-    max-width: 348px;
-    }
-  }
+ 
   :root {
     --body-bg-color: #22212C;
     --text-color: #837E9F;
@@ -44,7 +34,12 @@
  
   aside{
     background: greenyellow;
-    flex: 1;/*significa "cresce por igual, pegando 1 fração"  ocupando 1/3 do espaço*/
+    
+      flex: 0 1 auto; /* flex-grow: 0; flex-shrink: 1; flex-basis: auto (tamanho original) */
+      max-width: 348px; /* Largura máxima fixa de 348px */
+      min-width: 208px; /* Largura mínima de 208px quando encolher */
+  
+    
   }
   aside div{ 
    margin-bottom: 30px;
@@ -196,26 +191,21 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  /*MAIN MY PROJECTS*/
+  main{
+
+  }
+
+  #myProjects{
+    border: 2px solid blue;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
  
-
-
-
-
-
-
   
-
   
   main{
     background:lightblue;
@@ -223,11 +213,13 @@
     
     display: flex;
     flex-direction: column;/*para ficar os elementos um abaixo do outro*/
+    
   }
   
   main section:nth-child(1){
     background: white;
     flex:2 0;
+    
   }
   
   main section:nth-child(2){
