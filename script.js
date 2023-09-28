@@ -1,12 +1,12 @@
-
-const carouselContainer = document.getElementById('carousel-container');
-const iframeCarousel = document.getElementById('carousel');
-const iframes = iframeCarousel.querySelectorAll('iframe');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
+const carouselContainer = document.querySelector('#carousel');
+const iframes = carouselContainer.querySelectorAll('iframe');
+const prevButton = document.querySelector('#prev');
+const nextButton = document.querySelector('#next');
+const playPauseButton = document.querySelector('#playPause');
 
 let currentIndex = 0;
-const intervalDuration = 5000; // 5 segundos
+const intervalDuration = 3000;
+let isPaused = false;
 
 function showIframe(index) {
   iframes.forEach((iframe, i) => {
@@ -15,13 +15,17 @@ function showIframe(index) {
 }
 
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % iframes.length;
-  showIframe(currentIndex);
+  if (!isPaused) {
+    currentIndex = (currentIndex + 1) % iframes.length;
+    showIframe(currentIndex);
+  }
 }
 
 function prevSlide() {
-  currentIndex = (currentIndex - 1 + iframes.length) % iframes.length;
-  showIframe(currentIndex);
+  if (!isPaused) {
+    currentIndex = (currentIndex - 1 + iframes.length) % iframes.length;
+    showIframe(currentIndex);
+  }
 }
 
 nextButton.addEventListener('click', () => {
@@ -34,6 +38,11 @@ prevButton.addEventListener('click', () => {
   clearInterval(carouselInterval);
 });
 
+playPauseButton.addEventListener('click', () => {
+  isPaused = !isPaused;
+  playPauseButton.textContent = isPaused ? 'Play' : 'Pause';
+});
+
 showIframe(currentIndex);
 
 let carouselInterval = setInterval(nextSlide, intervalDuration);
@@ -43,5 +52,7 @@ carouselContainer.addEventListener('mouseenter', () => {
 });
 
 carouselContainer.addEventListener('mouseleave', () => {
-  carouselInterval = setInterval(nextSlide, intervalDuration);
+  if (!isPaused) {
+    carouselInterval = setInterval(nextSlide, intervalDuration);
+  }
 });

@@ -257,13 +257,13 @@
  
   #boxesProjects{
     display: flex;
-    border: 2px solid rgb(255, 0, 200);
+    border: 2px solid rgb(0, 255, 234);
     flex: 0 1 186px ;
   }
 
   #boxesProjects div{
     display: flex;
-    border: 2px solid rgb(0, 255, 0);
+    border: 2px solid rgb(76, 0, 255);
     flex: 0 1 50%;
 
     border-radius: 20px;
@@ -273,14 +273,12 @@
     flex-direction: column;
     
     box-shadow: var(--box-shadow);
-
     }
 
     #boxesProjects  div h3 img{
       display: flex;
       margin: 22px 12px 20px 30px;
       align-items: center;
-      
     }
 
 
@@ -292,32 +290,107 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
-
       margin: 0 30px 0 0;
       text-wrap: nowrap;
-      
-
     }
 
+
+    #boxesProjects p{
+      display:flex ;
+      margin-left: 30px;
+    }
+
+
+
     #boxesProjects p img {
+    border: 2px solid rgb(255, 0, 242);
     display: flex;
-    border: 2px solid rgb(0, 255, 0);
-    margin-left: 30px;
-
-
-
+    align-items:center ;
+    display: inline-flex;
+    margin: 30px 8px  26px 0;
 
    }
 
 
-   #boxesProjects p  {
-    display: flex;
+   #boxesProjects p span{
+    display: inline-flex;
+    align-items:center ;
+    margin-right: 16px;
     border: 2px solid rgb(0, 255, 0);
-
-
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
 
    }
+
+
+
   /*MAIN RECENT REPOSITORIES*/
+  /*same configs "MY projects"*/
+
+
+
+
+
+
+
+  /*MAIN carousel*/
+
+  #carousel {
+    display: flex;
+    flex-direction: row; /* Alinhe as iframes horizontalmente */
+    overflow: hidden; /* Oculte as iframes que não estão visíveis */
+    position: relative;
+  }
+  
+  #carousel iframe {
+    width: 80%;
+    height: 800px;
+    border: none;
+    display: none; /* Oculte as iframes por padrão */
+  }
+  
+  #prev,
+  #next,
+  #playPause {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.178);
+    color: rgba(255, 255, 255, 0.575);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    
+
+  }
+  
+  
+  
+  #prev {
+    left: 10px;
+    
+  }
+  
+  #next {
+    right: 10px;
+  }
+  
+  #playPause {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+
+
+
+
+
+
+
 
 
 
@@ -330,3 +403,20 @@
     transition: 0.6s;
  }
  
+
+
+
+
+  #prev:hover {
+   background-color:var(--bg-cards);
+  
+  }
+
+  #next:hover {
+   background-color: var(--bg-cards);
+  }
+
+  #playPause:hover {
+    background-color: var(--bg-cards);
+
+  }
