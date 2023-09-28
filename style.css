@@ -193,7 +193,7 @@
   
   /*MAIN MY PROJECTS*/
   main{
-
+    gap: 30px;
   }
 
   #myProjects{
@@ -202,13 +202,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
+    height: 86px;
+    padding: 30px;
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    box-shadow: var(--box-shadow);
   }
   
+  #myProjects h2{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700
+  }
+ 
+  #myProjects a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
  
   
-  
   main{
-    background:lightblue;
+    background: var(--body-bg-color);
     flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
     
     display: flex;
@@ -231,3 +250,15 @@
     background:pink;
     flex:1 0;
   }
+
+
+
+
+
+  /*ANIMAÇÕES HOVER*/
+  
+  #myProjects a:hover{
+    color: aliceblue;
+    transition: 0.6s;
+ }
+ 
