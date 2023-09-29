@@ -1,5 +1,5 @@
 const carouselContainer = document.querySelector('#carousel');
-const iframes = carouselContainer.querySelectorAll('iframe');
+const images = carouselContainer.querySelectorAll('img');
 const prevButton = document.querySelector('#prev');
 const nextButton = document.querySelector('#next');
 const playPauseButton = document.querySelector('#playPause');
@@ -8,23 +8,23 @@ let currentIndex = 0;
 const intervalDuration = 3000;
 let isPaused = false;
 
-function showIframe(index) {
-  iframes.forEach((iframe, i) => {
-    iframe.style.display = i === index ? 'block' : 'none';
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.style.display = i === index ? 'block' : 'none';
   });
 }
 
 function nextSlide() {
   if (!isPaused) {
-    currentIndex = (currentIndex + 1) % iframes.length;
-    showIframe(currentIndex);
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
   }
 }
 
 function prevSlide() {
   if (!isPaused) {
-    currentIndex = (currentIndex - 1 + iframes.length) % iframes.length;
-    showIframe(currentIndex);
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
   }
 }
 
@@ -43,7 +43,7 @@ playPauseButton.addEventListener('click', () => {
   playPauseButton.textContent = isPaused ? 'Play' : 'Pause';
 });
 
-showIframe(currentIndex);
+showImage(currentIndex);
 
 let carouselInterval = setInterval(nextSlide, intervalDuration);
 

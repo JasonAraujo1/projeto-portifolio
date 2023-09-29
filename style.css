@@ -233,19 +233,21 @@
     align-items: center;
     border-radius: 20px;
     height: 86px;
-    padding: 30px;
+    
     color: var(--text-color);
     background-color: var(--bg-cards);
     box-shadow: var(--box-shadow);
   }
   
   #myProjects h2{
+    padding: 30px;
     font-size: 20px;
     font-style: normal;
     font-weight: 700
   }
  
   #myProjects a{
+    padding: 30px;
     color: var(--text-color);
     text-decoration: none;
     font-size: 13px;
@@ -340,19 +342,25 @@
     flex-direction: row; /* Alinhe as iframes horizontalmente */
     overflow: hidden; /* Oculte as iframes que não estão visíveis */
     position: relative;
-    border: 20px solid var(--bg-cards);
-    width: 80%;
-    height: 670px;
+
+    max-width: 1200px;
+    
     border-radius: 20px;
     margin: 30px auto ;
+    
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    border: 10px solid var(--bg-cards);
   }
   
-  #carousel iframe {
+  #carousel img {
+    
     
     width: 100%;
-    height: 800px;
-    border: none;
+   
     display: none; /* Oculte as iframes por padrão */
+
+    
   }
   
   #prev,
@@ -394,13 +402,10 @@
   /*ANIMAÇÕES HOVER*/
   
   #myProjects a:hover{
-    color: rgba(240, 248, 255, 0.507);
+    color: rgb(51, 50, 50);
     transition: 0.6s;
  }
  
-
-
-
 
   #prev:hover {
    background-color:var(--bg-cards);
