@@ -5,15 +5,21 @@
    
   }
 
-  body{
-    height: 100vh;
+  body {
+    /* height: 100vh; Remova esta linha */
+    min-height: 100vh; /* Adicione esta linha */
+    display: flex; /* Adicione esta linha */
+    flex-direction: column; /* Adicione esta linha */
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
     background-color: var(--body-bg-color);
     color: var(--body-bg-color);
   }
   
-
+  .container {
+    flex-grow: 1;
+  }
+  
 
 
   .page{
@@ -331,10 +337,6 @@
 
 
 
-
-
-
-
   /*MAIN carousel*/
 
   #carousel {
@@ -355,13 +357,13 @@
   
   #carousel img {
     
-    
     width: 100%;
    
     display: none; /* Oculte as iframes por padrão */
 
-    
   }
+
+
   
   #prev,
   #next,
@@ -392,6 +394,8 @@
   #playPause {
     left: 50%;
     transform: translateX(-50%);
+    top: 47.5%;
+   
   }
   
   

@@ -5,7 +5,7 @@ const nextButton = document.querySelector('#next');
 const playPauseButton = document.querySelector('#playPause');
 
 let currentIndex = 0;
-const intervalDuration = 3000;
+const intervalDuration = 3500;
 let isPaused = false;
 
 function showImage(index) {
