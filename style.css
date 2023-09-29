@@ -231,7 +231,7 @@
 
 
   #myProjects{
-
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,12 +262,13 @@
 
 
 
-  /*MAIN BOX PROJECTS*/
+  /*MAIN BOX PROJECTS(CONTENT 1 2)*/
  
   #boxesProjects{
     display: flex;
     flex: 0 1 186px ;
     gap: 30px;
+    margin: 30px 0;
   }
 
   #boxesProjects div{
