@@ -75,7 +75,7 @@
   }
   
   #containerPhoto p{
-    margin: 0 auto 49px;
+    margin: 10px auto 49px;
     font-size: 13px;
     font-weight: 300;
   }
@@ -230,6 +230,8 @@
   }
 
 
+  
+
   #myProjects{
   
     display: flex;
@@ -263,7 +265,7 @@
 
 
   /*MAIN BOX PROJECTS(CONTENT 1 2)*/
- 
+
   #boxesProjects{
     display: flex;
     flex: 0 1 186px ;
@@ -271,7 +273,21 @@
     margin: 30px 0;
   }
 
+  #boxesProjects a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 20px 5px;
+  }
+
+
+ 
+
   #boxesProjects div{
+   
+
     display: flex;
     flex: 0 1 50%;
 
@@ -282,16 +298,24 @@
     flex-direction: column;
     
     box-shadow: var(--box-shadow);
+
+    
+    
     }
 
-    #boxesProjects  div h3 img{
+  
+
+    #boxesProjects  div h3 img[alt="folder symbol"]{
       display: flex;
       margin: 22px 12px 20px 30px;
       align-items: center;
+      
+      
     }
 
 
     #boxesProjects div h3{
+
       position: relative;
       display: flex;
       align-items: center;
@@ -300,36 +324,43 @@
       font-weight: 700;
       margin: 0 30px 0 0;
       text-wrap: nowrap;
+      
+      
     }
 
 
     #boxesProjects p{
+
       display:flex ;
       margin-left: 30px;
+      inset-inline-end: 50%;
     }
 
 
 
     #boxesProjects p img {
+
     display: flex;
     align-items:center ;
     display: inline-flex;
     margin: 30px 8px  26px 0;
-
+    
    }
 
 
-   #boxesProjects p span{
-    display: inline-flex;
+   #boxesProjects p, span, img{
+
+    display:flex;
     align-items:center ;
     margin-right: 16px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-
+  
    }
 
-
+   
+ 
 
   /*MAIN RECENT REPOSITORIES*/
   /*same configs "MY projects"*/
@@ -377,7 +408,6 @@
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
-    
   }
   
   
@@ -400,11 +430,9 @@
   
 
 
-
-
   /*ANIMAÇÕES HOVER*/
   
-  #myProjects a:hover{
+  #boxesProjects a:hover, #myProjects a:hover{
     color: rgb(51, 50, 50);
     transition: 0.6s;
  }
