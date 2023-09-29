@@ -9,45 +9,50 @@
     height: 100vh;
     font-family: 'Exo', sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
+    background-color: var(--body-bg-color);
     color: var(--body-bg-color);
   }
+  
+
+
+
   .page{
-    border: 25px solid;
+    border: 25px solid ;
     min-height: 100vh;
     display: flex;
     gap: 30px;
-    
  
   }
 
+ 
  
 
  
   :root {
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
-    --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
-    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);;
+    --body-bg-color: #e9e6e9;
+    --text-color: rgba(0, 0, 0, 0.479);
+    --bg-cards: #fffbf6;
+    --bg-techs: #297fb9;
+    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
   }
  
  
   aside{
-    background: greenyellow;
-    
+      background: var(--body-bg-color);
       flex: 0 1 auto; /* flex-grow: 0; flex-shrink: 1; flex-basis: auto (tamanho original) */
       max-width: 348px; /* Largura máxima fixa de 348px */
       min-width: 208px; /* Largura mínima de 208px quando encolher */
-  
-    
+   
   }
+
   aside div{ 
    margin-bottom: 30px;
   }
 
  /*ASIDE CONTAINER PHOTO*/
+
   #containerPhoto{
-    border: 2px solid red;
+    padding: 2px;
     text-align: center;
     border-radius: 20px;
     color: var(--text-color);/*text color*/
@@ -74,7 +79,7 @@
 
  #containerInfos{
   border-radius: 20px;
-  border: 2px solid blue;
+  padding: 2px;
   color: var(--text-color);
   background-color: var(--bg-cards);
   font-size: 13px;
@@ -103,7 +108,7 @@
 
  /*ASIDE CONTAINER TECNOLOGIAS */
  #containerTecnologias{
-  border: 2px solid purple;
+  padding: 2px;
   border-radius: 20px ;
   color: black;
   background-color: var(--bg-cards);
@@ -142,8 +147,8 @@
   font-size: 10px;
   font-weight: 700;
   display: flex;
-  border: 2px solid #CB92B1;
-  background-color: #CB92B1;
+  border: 2px solid rgb(0 0 0 / 2%);
+  background-color: #b929291c;
   border-radius: 30px;
   width: 86px;
   align-items: center;
@@ -157,7 +162,7 @@
   
   /*ASIDE CONTAINER EDUCAÇÃO*/
   #containerEducação{
-    border: 2px solid peru;
+    padding: 2px;
     border-radius: 20px;
     background-color: var(--bg-cards);
     box-shadow: var(--box-shadow);
@@ -206,24 +211,22 @@
   }
   
   main section:nth-child(1){
-    background: white;
     flex:2 0;
     
   }
   
   main section:nth-child(2){
-    background:orange;
+
     flex:0 100px;/*'0' para não crescer por igual, e vai ter uma altura fixa de '100px', ou seja NÃO É FLEXÍVEL(não é flex), não vai se adaptar*/
   }
   
   main section:nth-child(3){
-    background:pink;
+
     flex:1 0;
   }
 
 
   #myProjects{
-    border: 2px solid blue;
 
     display: flex;
     justify-content: space-between;
@@ -257,13 +260,12 @@
  
   #boxesProjects{
     display: flex;
-    border: 2px solid rgb(0, 255, 234);
     flex: 0 1 186px ;
+    gap: 30px;
   }
 
   #boxesProjects div{
     display: flex;
-    border: 2px solid rgb(76, 0, 255);
     flex: 0 1 50%;
 
     border-radius: 20px;
@@ -285,7 +287,6 @@
     #boxesProjects div h3{
       position: relative;
       display: flex;
-      border: 2px solid red;
       align-items: center;
       font-size: 16px;
       font-style: normal;
@@ -303,7 +304,6 @@
 
 
     #boxesProjects p img {
-    border: 2px solid rgb(255, 0, 242);
     display: flex;
     align-items:center ;
     display: inline-flex;
@@ -316,7 +316,6 @@
     display: inline-flex;
     align-items:center ;
     margin-right: 16px;
-    border: 2px solid rgb(0, 255, 0);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -341,10 +340,15 @@
     flex-direction: row; /* Alinhe as iframes horizontalmente */
     overflow: hidden; /* Oculte as iframes que não estão visíveis */
     position: relative;
+    border: 20px solid var(--bg-cards);
+    width: 80%;
+    height: 800px;
+    border-radius: 20px;
+    margin: 30px auto ;
   }
   
   #carousel iframe {
-    width: 80%;
+    width: 100%;
     height: 800px;
     border: none;
     display: none; /* Oculte as iframes por padrão */
@@ -356,17 +360,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.178);
-    color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(245, 206, 206, 0.178);
+    color: rgba(12, 6, 6, 0.479);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
     
-
   }
-  
   
   
   #prev {
@@ -388,18 +390,10 @@
 
 
 
-
-
-
-
-
-
-
-
   /*ANIMAÇÕES HOVER*/
   
   #myProjects a:hover{
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.507);
     transition: 0.6s;
  }
  
@@ -420,3 +414,7 @@
     background-color: var(--bg-cards);
 
   }
+
+
+
+ 
