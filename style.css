@@ -442,8 +442,10 @@
     #carousel img {
       max-width: 530px;
       max-height: 942px ;
-      content: url('.github/PORTIFÓLIO README THUMBS/social tree thumbnail-phone.png')
-              ; /* Substitua pelo caminho da imagem para telas menores */
+      content: url('.github/social tree thumbnail-phone.png'), 
+               url('.github/dev links thumbnail-phone.jpg'),
+               url('.github/brownie thumbnail-phone.png');
+              /* Substitua pelo caminho da imagem para telas menores */
     }
 
     #boxesProjects{
