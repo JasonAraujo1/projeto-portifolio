@@ -206,6 +206,7 @@
   
 
   main{
+    border-right: 25px solid;
     background: var(--body-bg-color);
     flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
     
@@ -455,11 +456,14 @@
 
 
 
+  /*MEDIA QUERIES THUMBNAIL DISPLAY ADJUST */
+
   @media screen and (max-width: 660px) {
     #carousel img {
       max-width: 530px;
       max-height: 942px ;
-      content: url('.github/PORTIFÓLIO README THUMBS/brownie thumbnail-phone.png'); /* Substitua pelo caminho da imagem para telas menores */
+      content: url('.github/PORTIFÓLIO README THUMBS/social tree thumbnail-phone.png')
+              ; /* Substitua pelo caminho da imagem para telas menores */
     }
 
     #boxesProjects{
@@ -469,6 +473,6 @@
     #boxesProjects div{
       flex: 1;
 
-    }
 
+    }
   }
