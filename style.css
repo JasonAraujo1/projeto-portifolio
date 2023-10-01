@@ -214,23 +214,6 @@
     
   }
   
-  main section:nth-child(1){
-    flex:2 0;
-    
-  }
-  
-  main section:nth-child(2){
-
-    flex:0 100px;/*'0' para não crescer por igual, e vai ter uma altura fixa de '100px', ou seja NÃO É FLEXÍVEL(não é flex), não vai se adaptar*/
-  }
-  
-  main section:nth-child(3){
-
-    flex:1 0;
-  }
-
-
-  
 
   #myProjects{
   
