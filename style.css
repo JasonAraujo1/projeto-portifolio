@@ -206,7 +206,6 @@
   
 
   main{
-    border-right: 25px solid;
     background: var(--body-bg-color);
     flex:2;/*/*significa "cresce por igual, pegando 2 frações"  ocupando 2/3 do espaço*/
     
@@ -288,7 +287,6 @@
 
   #boxesProjects div{
    
-
     display: flex;
     flex: 0 1 50%;
 
@@ -300,7 +298,6 @@
     
     box-shadow: var(--box-shadow);
 
-    
     
     }
 
@@ -473,6 +470,9 @@
     #boxesProjects div{
       flex: 1;
 
+    }
 
+    main{
+    border-right: 25px solid;
     }
   }
