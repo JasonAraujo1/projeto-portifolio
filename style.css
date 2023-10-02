@@ -91,6 +91,7 @@
   font-size: 13px;
   font-weight: 400;
   box-shadow: var(--box-shadow);
+  
  }
 
  #containerInfos ul {/*box da lista no geral*/
@@ -98,6 +99,7 @@
   gap: 28px;
   flex-direction: column;
   margin: 30px  40px;
+  
  }
 
  #containerInfos ul li{/*itens da lista. Aqui alinhou img com text, na horizontal*/
@@ -108,8 +110,14 @@
 
  #containerInfos ul li img{
   margin-right:20px ;
+  
  }
 
+ #containerInfos ul li a{
+  text-decoration: none;  
+  color: var(--text-color);
+
+ }
 
 
  /*ASIDE CONTAINER TECNOLOGIAS */
@@ -414,9 +422,15 @@
 
   /*ANIMAÇÕES HOVER*/
   
-  #boxesProjects a:hover, #myProjects a:hover{
+  #boxesProjects a:hover, #myProjects a:hover, #containerInfos a:hover{
+    
     color: rgb(51, 50, 50);
-    transition: 0.6s;
+    transition: 0.4s;
+    text-decoration: underline;
+    border-radius: 40px;
+    background-color: rgba(141, 139, 139, 0.185);
+    padding: 1% ;
+
  }
  
 
@@ -446,21 +460,9 @@
 
 
     
-  @media screen and (max-width: 660px) {
-    #carousel img {
-      max-width: 530px;
-      max-height: 942px ;
-      
-    }
-    .imagem-grande {
-      display: none;
-    }
-  
-    .imagem-pequena {
-      display: block;
-    }
+  @media(max-width: 660px) {
 
-
+    
 
     #carousel img {
 
@@ -474,6 +476,7 @@
 
 
 
+    
     #boxesProjects{
       flex-wrap: wrap;
     }
