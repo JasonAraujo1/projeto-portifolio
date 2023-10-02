@@ -5,7 +5,7 @@ const nextButton = document.querySelector('#next');
 const playPauseButton = document.querySelector('#playPause');
 
 let currentIndex = 0;
-const intervalDuration = 3500;
+const intervalDuration = 10000;
 let isPaused = false;
 
 function showImage(index) {
@@ -56,3 +56,5 @@ carouselContainer.addEventListener('mouseleave', () => {
     carouselInterval = setInterval(nextSlide, intervalDuration);
   }
 });
+
+
