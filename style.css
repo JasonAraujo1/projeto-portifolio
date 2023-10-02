@@ -434,7 +434,9 @@
 
   }
 
-
+  main{
+    border-right: 25px solid;
+    }
 
   /*MEDIA QUERIES THUMBNAIL DISPLAY ADJUST */
 
@@ -442,9 +444,9 @@
     #carousel img {
       max-width: 530px;
       max-height: 942px ;
-      content: url('.github/social-tree-thumbnail-phone.png'), 
-               url('.github/dev-links-thumbnail-phone.jpg'),
-               url('.github/brownie-thumbnail-phone.png');
+      content: url('assets/social-tree-thumbnail-phone.png'), 
+               url('assets/dev-links-thumbnail-phone.jpg'),
+               url('assets/brownie-thumbnail-phone.png');
               /* Substitua pelo caminho da imagem para telas menores */
     }
 
@@ -456,8 +458,8 @@
       flex: 1;
 
     }
-
     main{
-    border-right: 25px solid;
-    }
+      border-right: 25px solid;
+      }
+   
   }
