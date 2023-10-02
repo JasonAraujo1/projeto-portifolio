@@ -115,6 +115,7 @@
 
  #containerInfos ul li a{
   text-decoration: none;  
+  text-decoration: underline;
   color: var(--text-color);
 
  }
@@ -198,6 +199,7 @@
     font-style: normal;
     font-weight: 700;
     color: var(--text-color);
+    
 
    }
   
@@ -206,8 +208,16 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
+    text-decoration: none;
+    text-decoration: underline;
+    color: var(--text-color);
    }
   
+   #containerEducação ul li p a{
+    text-decoration: none;
+    color: var(--text-color);
+   }
+
   
   
   /*MAIN MY PROJECTS*/
@@ -247,6 +257,7 @@
     padding: 30px;
     color: var(--text-color);
     text-decoration: none;
+    text-decoration: underline;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -267,6 +278,7 @@
   #boxesProjects a{
     color: var(--text-color);
     text-decoration: none;
+    text-decoration: underline;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -422,7 +434,7 @@
 
   /*ANIMAÇÕES HOVER*/
   
-  #boxesProjects a:hover, #myProjects a:hover, #containerInfos a:hover{
+  #boxesProjects a:hover, #myProjects a:hover, #containerInfos a:hover, #containerEducação a:hover{
     
     color: rgb(51, 50, 50);
     transition: 0.4s;
