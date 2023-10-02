@@ -14,6 +14,19 @@ function showImage(index) {
   });
 }
 
+function nextSlide() {
+  if (!isPaused) {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+}
+
+function prevSlide() {
+  if (!isPaused) {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+}
 
 
 
