@@ -28,20 +28,7 @@ function prevSlide() {
   }
 }
 
-nextButton.addEventListener('click', () => {
-  nextSlide();
-  clearInterval(carouselInterval);
-});
 
-prevButton.addEventListener('click', () => {
-  prevSlide();
-  clearInterval(carouselInterval);
-});
-
-playPauseButton.addEventListener('click', () => {
-  isPaused = !isPaused;
-  playPauseButton.textContent = isPaused ? 'Play' : 'Pause';
-});
 
 showImage(currentIndex);
 

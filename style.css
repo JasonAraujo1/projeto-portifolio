@@ -397,38 +397,7 @@
 
 
   
-  #prev,
-  #next,
-  #playPause {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(245, 206, 206, 0.178);
-    color: rgba(12, 6, 6, 0.479);
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-  }
-  
-  
-  #prev {
-    left: 10px;
-    
-  }
-  
-  #next {
-    right: 10px;
-  }
-  
-  #playPause {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 47.5%;
-   
-  }
-  
+
   
 
 
@@ -446,19 +415,6 @@
  }
  
 
-  #prev:hover {
-   background-color:var(--bg-cards);
-  
-  }
-
-  #next:hover {
-   background-color: var(--bg-cards);
-  }
-
-  #playPause:hover {
-    background-color: var(--bg-cards);
-
-  }
 
   main{
     border-right: 25px solid;
@@ -529,6 +485,7 @@
 
 /* Estilo da barra de progresso interna */
 .progress-bar {
+  
   content: '';
   display: block;
   width: 100%;
