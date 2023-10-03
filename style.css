@@ -477,7 +477,7 @@
   top: 20px;
   left: 50%;
   border-radius: 4px;
-  background: rgb(255, 255, 255);
+  background:rgb(163, 163, 167);
   transform: translate(-50%, -50%);
   overflow: hidden;
   z-index: 1;
@@ -491,7 +491,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background:rgb(163, 163, 167);
+  background:white;
   animation: load 10s linear infinite; /* Loop a cada 3,5 segundos */
 }
 
