@@ -490,20 +490,20 @@
 
 
     
-@media(max-width: 660px) {
+/* Estilos para telas maiores que 660px */
+@media (min-width: 661px) {
+  .phone-image {
+    display: none;
+  }
+}
 
-    
-
-  #carousel .fotin{
-
-    max-width: 320px;
-    max-height: 942px;
-    content: url('assets/social-tree-thumbnail-phone.png'),
-              url('assets/dev-links-thumbnail-phone.jpg'),
-              url('assets/brownie-thumbnail-phone.png') ;
-    /* Adicione todos os caminhos das imagens que deseja usar para telas menores, separados por vírgulas */
-    }
-
+/* Estilos para telas menores ou iguais a 660px */
+@media (max-width: 660px) {
+  .phone-image {
+    display: block;
+    width: 100%;
+    max-height: 670px; /* ou o valor desejado */
+  }
 
 
   
@@ -519,6 +519,5 @@
     border-right:30px solid;
     }
 
-
+  }
  
-}
