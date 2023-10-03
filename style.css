@@ -442,7 +442,7 @@
   width: 100%;
   height: 100%;
   background:white;
-  animation: load 10s linear infinite; /* Loop a cada 3,5 segundos */
+  animation: load 10s linear infinite; /* Loop a cada 10 segundos */
 }
 
 /* Animação da barra de progresso */
