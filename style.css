@@ -507,9 +507,21 @@
     max-height: 670px; /* ou o valor desejado */
     
   }
+}
 
-
+@media(max-width: 661px) { /*telas menores eu 660px width - ajuste na barra de progresso*/
+  .progress-bar {
+    
+    max-width: 220px;
+   
+    
   
+  }
+  .progress{
+    max-width: 220px;
+  }
+
+
   #boxesProjects{
     flex-wrap: wrap;
   }
@@ -521,6 +533,6 @@
   main{
     border-right:30px solid;
     }
-
   }
+  
  
