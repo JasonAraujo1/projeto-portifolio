@@ -271,7 +271,6 @@
 
   #boxesProjects{
     display: flex;
-    flex: 0 1 186px ;
     gap: 30px;
     margin: 30px 0;
   }
@@ -301,7 +300,6 @@
     flex-direction: column;
     
     box-shadow: var(--box-shadow);
-
     
     }
 
@@ -325,7 +323,6 @@
       font-style: normal;
       font-weight: 700;
       margin: 0 30px 0 0;
-      text-wrap: nowrap;
       
       
     }
@@ -417,54 +414,8 @@
  
 
 
-  main{
-    border-right: 25px solid;
-    }
+ 
 
-
-
-
-
-
-
-  /*MEDIA QUERIES THUMBNAIL DISPLAY ADJUST */
-
-
-
-
-    
-  @media(max-width: 660px) {
-
-    
-
-    #carousel img {
-
-      max-width: 530px;
-      max-height: 942px;
-      content: url('assets/social-tree-thumbnail-phone.png'),
-              url('assets/dev-links-thumbnail-phone.jpg'),
-              url('assets/brownie-thumbnail-phone.png') ;
-      /* Adicione todos os caminhos das imagens que deseja usar para telas menores, separados por vírgulas */
-      }
-
-
-
-    
-    #boxesProjects{
-      flex-wrap: wrap;
-    }
-
-    #boxesProjects div{
-      flex: 1;
-
-    }
-    main{
-      border-right: 25px solid;
-      }
-
-      
-   
-  }
 
 
 
@@ -530,4 +481,45 @@
   100% {
       width: 100%;
   }
+}
+
+
+
+
+
+/*MEDIA QUERIES THUMBNAIL DISPLAY ADJUST */
+
+
+    
+@media(max-width: 660px) {
+
+    
+
+  #carousel img {
+
+    max-width: 530px;
+    max-height: 942px;
+    content: url('assets/social-tree-thumbnail-phone.png'),
+            url('assets/dev-links-thumbnail-phone.jpg'),
+            url('assets/brownie-thumbnail-phone.png') ;
+    /* Adicione todos os caminhos das imagens que deseja usar para telas menores, separados por vírgulas */
+    }
+
+
+
+  
+  #boxesProjects{
+    flex-wrap: wrap;
+  }
+
+  #boxesProjects div{
+    flex: 1;
+
+  }
+  main{
+    border-right:30px solid;
+    }
+
+
+ 
 }
