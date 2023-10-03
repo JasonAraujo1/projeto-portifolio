@@ -14,7 +14,7 @@ const desktopImages = [
 ];
 
 let currentIndex = 0;
-const intervalDuration = 1000; // Intervalo de 10 segundos (ou o valor desejado)
+const intervalDuration = 10000; // Intervalo de 10 segundos (ou o valor desejado)
 
 function showImage(index) {
   images.forEach((img, i) => {
@@ -24,7 +24,6 @@ function showImage(index) {
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % images.length;
-
   showImage(currentIndex);
 }
 
