@@ -1,8 +1,5 @@
 const carouselContainer = document.querySelector('#carousel');
 const images = carouselContainer.querySelectorAll('img.slide');
-const prevButton = document.querySelector('#prev');
-const nextButton = document.querySelector('#next');
-const playPauseButton = document.querySelector('#playPause');
 
 const phoneImages = [
   'assets/dev-links-thumbnail-phone.jpg',
@@ -17,8 +14,7 @@ const desktopImages = [
 ];
 
 let currentIndex = 0;
-const intervalDuration = 10000;
-let isPaused = false;
+const intervalDuration = 1000; // Intervalo de 10 segundos (ou o valor desejado)
 
 function showImage(index) {
   images.forEach((img, i) => {
@@ -27,23 +23,9 @@ function showImage(index) {
 }
 
 function nextSlide() {
-  if (!isPaused) {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
+  currentIndex = (currentIndex + 1) % images.length;
 
-    // Verifique se todas as imagens do conjunto atual foram exibidas
-    if (currentIndex === 0) {
-      // Reinicie o loop
-      setTimeout(nextSlide, intervalDuration);
-    }
-  }
-}
-
-function prevSlide() {
-  if (!isPaused) {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
-  }
+  showImage(currentIndex);
 }
 
 function updateImagesBasedOnScreenWidth() {
@@ -75,7 +57,5 @@ carouselContainer.addEventListener('mouseenter', () => {
 });
 
 carouselContainer.addEventListener('mouseleave', () => {
-  if (!isPaused) {
-    carouselInterval = setInterval(nextSlide, intervalDuration);
-  }
+  carouselInterval = setInterval(nextSlide, intervalDuration);
 });

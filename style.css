@@ -492,8 +492,10 @@
     
 /* Estilos para telas maiores que 660px */
 @media (min-width: 661px) {
+ 
   .phone-image {
     display: none;
+    
   }
 }
 
@@ -503,6 +505,7 @@
     display: block;
     width: 100%;
     max-height: 670px; /* ou o valor desejado */
+    
   }
 
 
