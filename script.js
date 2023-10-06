@@ -5,12 +5,14 @@ const phoneImages = [
   'assets/dev-links-thumbnail-phone.jpg',
   'assets/social-tree-thumbnail-phone.png',
   'assets/brownie-thumbnail-phone.png',
+  'assets/news-thumbnail-phone.png'
 ];
 
 const desktopImages = [
   'assets/dev-links-thumbnail.jpg',
   'assets/social-tree-thumbnail.png',
   'assets/brownie-thumbnail.png',
+  'assets/news-thumbnail.png'
 ];
 
 let currentIndex = 0;
