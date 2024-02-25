@@ -50,6 +50,7 @@ Olá, seja bem-vindo ao meu projeto de portfólio! Aqui, compartilho um pouco so
 
 - Pré-visualização de thumbnails de alguns projetos, permitindo aos visitantes explorar instantaneamente o trabalho e proporcionando uma experiência aprimorada com o uso da linguagem JavaScript para otimizar o carrossel.
 
+- Você pode visualizar o layout do projeto através [DESSE LINK](<https://jasonaraujo1.github.io/projeto-portifolio/>).
 
 
 
